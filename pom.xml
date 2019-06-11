@@ -18,10 +18,10 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<mybatisplus.version>3.0.7.1</mybatisplus.version>
+		<mybatisplus.version>3.1.1</mybatisplus.version>
 		<mysql.version>5.1.38</mysql.version>
 		<!--<mssql.version>4.0</mssql.version>-->
-		<!--<oracle.version>11.2.0.3</oracle.version>-->
+		<oracle.version>11.2.0.3</oracle.version>
 		<druid.version>1.1.13</druid.version>
 		<quartz.version>2.3.0</quartz.version>
 		<commons.lang.version>2.6</commons.lang.version>
@@ -40,6 +40,7 @@
 		<fastjson.version>1.2.47</fastjson.version>
 		<hutool.version>4.1.1</hutool.version>
 		<lombok.version>1.18.4</lombok.version>
+		<poi.version>3.17</poi.version>
 
 		<!--wagon plugin 配置-->
 		<service-path>/work/renren</service-path>
@@ -103,11 +104,11 @@
 			<version>${mysql.version}</version>
 		</dependency>
 		 <!--oracle驱动-->
-		<!--<dependency>-->
-			<!--<groupId>com.oracle</groupId>-->
-			<!--<artifactId>ojdbc6</artifactId>-->
-			<!--<version>${oracle.version}</version>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>${oracle.version}</version>
+		</dependency>
 		 <!--&lt;!&ndash;mssql驱动&ndash;&gt;-->
 		<!--<dependency>-->
 			<!--<groupId>com.microsoft.sqlserver</groupId>-->
@@ -230,6 +231,11 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>${lombok.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${poi.version}</version>
 		</dependency>
 	</dependencies>
 

@@ -43,6 +43,7 @@ spring:
 
 #mybatis
 mybatis-plus:
+  type-enums-package: com.youhualife.modules.sendrepair.entity.enums
   mapper-locations: classpath*:/mapper/**/*.xml
   #实体扫描，多个package用逗号或者分号分隔
   typeAliasesPackage: com.youhualife.modules.*.entity

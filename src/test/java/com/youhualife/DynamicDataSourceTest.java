@@ -1,6 +1,7 @@
 package com.youhualife;
 
 import com.youhualife.service.DynamicDataSourceTestService;
+import com.youhualife.service.DynamicDataSourceTestService2;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,9 @@ public class DynamicDataSourceTest {
     @Autowired
     private DynamicDataSourceTestService dynamicDataSourceTestService;
 
+    @Autowired
+    private DynamicDataSourceTestService2 dynamicDataSourceTestService2;
+
     @Test
     public void test(){
         Long id = 1L;
@@ -27,4 +31,8 @@ public class DynamicDataSourceTest {
         dynamicDataSourceTestService.updateUserBySlave2(id);
     }
 
+    @Test
+    public void test2(){
+        dynamicDataSourceTestService2.selectTest();
+    }
 }

@@ -28,6 +28,8 @@ public class Constant {
      *  升序
      */
     public static final String ASC = "asc";
+
+    public static final String SERIALI_NUMBER_SR_ORDER = "SRNO";
 	/**
 	 * 菜单类型
 	 * 
