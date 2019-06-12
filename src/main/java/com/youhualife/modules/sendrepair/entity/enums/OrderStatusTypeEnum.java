@@ -10,7 +10,7 @@ public enum OrderStatusTypeEnum {
     Created(0, "创建"),
     Initiated(10, "发起"),
     Approved(20, "审核通过"),
-    Refused(21, "审核不通过");
+    Refused(19, "审核不通过");
 
     OrderStatusTypeEnum(int code, String desc) {
         this.code = code;

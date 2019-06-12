@@ -68,7 +68,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserDao, SysUserEntity> i
 	}
 
 	@Override
-	@Transactional
+	@Transactional(rollbackFor = RuntimeException.class)
 	public void saveUser(SysUserEntity user) {
 		user.setCreateTime(new Date());
 		//sha256加密
@@ -85,7 +85,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserDao, SysUserEntity> i
 	}
 
 	@Override
-	@Transactional
+	@Transactional(rollbackFor = RuntimeException.class)
 	public void update(SysUserEntity user) {
 		if(StringUtils.isBlank(user.getPassword())){
 			user.setPassword(null);

@@ -1,4 +1,5 @@
 package com.youhualife.modules.sendrepair.service.impl;
+import cn.hutool.core.convert.Convert;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 import java.util.Map;
@@ -21,11 +22,11 @@ public class OrderWheelInfoServiceImpl extends ServiceImpl<OrderWheelInfoDao, Or
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
 
-        String orderId = (String)params.get("orderId");
+        Long orderId = Convert.toLong(params.get("orderId"),null);
         IPage<OrderWheelInfoEntity> page = this.page(
                 new Query<OrderWheelInfoEntity>().getPage(params),
                 new QueryWrapper<OrderWheelInfoEntity>()
-                        .eq(orderId!=null && StringUtils.isNotBlank(orderId),"sr_order_id", orderId)
+                        .eq(orderId!=null,"sr_order_id", orderId)
         );
 
         return new PageUtils(page);
