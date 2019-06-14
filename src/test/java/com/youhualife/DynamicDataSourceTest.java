@@ -35,4 +35,9 @@ public class DynamicDataSourceTest {
     public void test2(){
         dynamicDataSourceTestService2.selectTest();
     }
+
+    @Test
+    public void test3(){
+        dynamicDataSourceTestService2.selectTest2();
+    }
 }

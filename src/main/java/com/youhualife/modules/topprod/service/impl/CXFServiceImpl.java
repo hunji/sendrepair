@@ -6,6 +6,8 @@ import com.youhualife.modules.topprod.entity.CXFEntity;
 import com.youhualife.modules.topprod.service.CXFService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service("CXFService")
 public class CXFServiceImpl  extends ServiceImpl<CXFDao, CXFEntity> implements CXFService {
 }

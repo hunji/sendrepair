@@ -31,6 +31,11 @@ public class OrderEntity implements Serializable {
 	 */
 	private String trusteeName;
 	/**
+	 * 委托单位编号
+	 */
+
+	private String trusteeCode;
+	/**
 	 * 联系人
 	 */
 	private String contactName;

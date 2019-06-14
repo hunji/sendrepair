@@ -49,6 +49,17 @@ public class PageUtils implements Serializable {
 	}
 
 	/**
+	 *  返回空数据
+	 */
+	public PageUtils(){
+		this.list=null;
+		this.totalCount = 0;
+		this.pageSize = 10;
+		this.currPage = 1;
+		this.totalPage = 0;
+	}
+
+	/**
 	 * 分页
 	 */
 	public PageUtils(IPage<?> page) {
