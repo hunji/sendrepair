@@ -1,13 +1,11 @@
 package com.youhualife.modules.topprod.service.impl;
 
-import cn.hutool.core.convert.Convert;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.youhualife.datasource.annotation.DataSource;
 import com.youhualife.modules.topprod.dao.TabHttzDao;
 import com.youhualife.modules.topprod.entity.TabHttzEntity;
 import com.youhualife.modules.topprod.service.TabHttzService;
-import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -8,7 +8,6 @@ import com.youhualife.modules.topprod.entity.OCCEntity;
 import com.youhualife.modules.topprod.service.OCCService;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service("OCCService")
